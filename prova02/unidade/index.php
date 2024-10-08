@@ -60,7 +60,10 @@
 
 <body class="bg-gray-200">
     <div class="container mx-auto py-4 px-12">
+    <nav class="bg-pink-100 shadow-lg p-4 rounded mb-5">
+    <h1 class="text-3xl font-bold text-center mb-6">Formulário de Criação de Unidade</h1>
         <form action="unidade.php" method="post" class="p-5 bg-white rounded shadow-md space-y-4">
+        
             <input type="text" name="id" id="id" value="<?= $id ? $unidade->getIdUni() : 0 ?>" hidden readonly>
 
             <div class="flex flex-col">

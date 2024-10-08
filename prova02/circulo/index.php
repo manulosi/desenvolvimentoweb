@@ -22,6 +22,7 @@
         }
         .form-control, .form-select {
             font-family: 'Roboto', sans-serif;
+            
             border: 2px solid #000; /* Bordas pretas */
             border-radius: 4px;
             padding: 0.5rem; 
@@ -66,9 +67,9 @@
 
 
 <body class="bg-gray-100">
-
     <div class="container mx-auto p-6">
-        <h1 class="text-3xl font-bold text-center mb-6">Formulário de Criação de Formas</h1>
+    <nav class="bg-pink-100 shadow-lg p-4 rounded mb-5">
+        <h1 class="text-3xl font-bold text-center mb-6">Formulário de Criação de Circulos</h1>
 
         <form action="circulo.php" method="post" enctype="multipart/form-data" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <input type="hidden" name="id" id="id" value="<?= $id ? $circulo->getId() : 0 ?>">
@@ -112,8 +113,7 @@
             <!-- Botões de Ação (Pretos e próximos) -->
             <div class="flex items-center justify-between space-x-2">
                 <button type="submit" name="acao" value="Salvar" class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Salvar</button>
-                <button type="submit" name="acao" value="Alterar" class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Alterar</button>
-                <button type="submit" name="acao" value="Excluir" class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Excluir</button>
+                  <button type="submit" name="acao" value="Excluir" class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Excluir</button>
             </div>
         </form>
 

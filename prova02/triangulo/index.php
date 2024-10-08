@@ -68,6 +68,9 @@
 
 <body class="bg-gray-200">
     <div class="container mx-auto py-4 px-12">
+    
+    <nav class="bg-pink-100 shadow-lg p-4 rounded mb-5">
+    <h1 class="text-3xl font-bold text-center mb-6">Formulário de Criação de Triangulo</h1>
         <form action="triangulo.php" method="post" enctype="multipart/form-data" class="p-5 bg-white rounded shadow-md space-y-4">
             <!-- Campo ID (oculto) -->
             <input type="text" name="id" id="id" value="<?= isset($triangulo) ? $triangulo->getId() : 0 ?>" hidden readonly>
