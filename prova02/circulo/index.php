@@ -77,13 +77,13 @@
             <!-- Raio -->
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="raio">Raio</label>
-                <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="raio" id="raio" value="<?= $id ? $circulo->getRaio() : 0 ?>" placeholder="Raio de sua forma">
+                <input type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="raio" id="raio" value="<?= $id ? $circulo->getRaio() :null ?>" placeholder="Raio de sua forma">
             </div>
 
             <!-- Cor -->
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="cor">Cor</label>
-                <input type="color" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="cor" id="cor" value="<?= $id ? $circulo->getCor() : 'black' ?>">
+            <div class="flex flex-col">
+                <label class="form-label" for="cor">Cor</label>
+                <input type="color" class="color-input" name="cor" id="cor" value="<?= $id ? $quadrado->getCor() : 'black' ?>">
             </div>
 
             <!-- Unidade -->

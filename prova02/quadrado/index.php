@@ -73,7 +73,7 @@
 
             <div class="flex flex-col">
                 <label class="form-label" for="altura">Altura</label>
-                <input type="number" class="form-control" name="altura" id="altura" value="<?= $id ? $quadrado->getAltura() : 0 ?>" placeholder="Digite a altura de sua forma" required>
+                <input type="number" class="form-control" name="altura" id="altura" value="<?= $id ? $quadrado->getAltura() : null ?>" placeholder="Digite a altura de sua forma" required>
             </div>
 
             <div class="flex flex-col">

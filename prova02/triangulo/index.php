@@ -78,19 +78,19 @@
             <!-- Lado 1 -->
             <div class="flex flex-col">
                 <label class="form-label" for="lado1">Lado 1</label>
-                <input type="number" class="form-control" name="lado1" id="lado1" value="<?= isset($triangulo) ? $triangulo->getLado1() : 0 ?>" placeholder="Digite o valor do lado 1" required>
+                <input type="number" class="form-control" name="lado1" id="lado1" value="<?= isset($triangulo) ? $triangulo->getLado1() : null ?>" placeholder="Digite o valor do lado 1" required>
             </div>
 
             <!-- Lado 2 -->
             <div class="flex flex-col">
                 <label class="form-label" for="lado2">Lado 2</label>
-                <input type="number" class="form-control" name="lado2" id="lado2" value="<?= isset($triangulo) ? $triangulo->getLado2() : 0 ?>" placeholder="Digite o valor do lado 2" required>
+                <input type="number" class="form-control" name="lado2" id="lado2" value="<?= isset($triangulo) ? $triangulo->getLado2() : null ?>" placeholder="Digite o valor do lado 2" required>
             </div>
 
             <!-- Lado 3 -->
             <div class="flex flex-col">
                 <label class="form-label" for="lado3">Lado 3</label>
-                <input type="number" class="form-control" name="lado3" id="lado3" value="<?= isset($triangulo) ? $triangulo->getLado3() : 0 ?>" placeholder="Digite o valor do lado 3" required>
+                <input type="number" class="form-control" name="lado3" id="lado3" value="<?= isset($triangulo) ? $triangulo->getLado3() : null ?>" placeholder="Digite o valor do lado 3" required>
             </div>
 
             <!-- Cor -->
