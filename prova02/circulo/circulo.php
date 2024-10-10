@@ -21,18 +21,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
         $uni = Unidade::listar(1, $unidade)[0];
         $circulo = new Circulo($id, $raio, $cor, $uni, $destino);
+      
         $resultado = "";
-        switch ($acao) {
-            case ("Salvar"):
-                $resultado = $circulo->incluir();
-                break;
-            case ("Alterar"):
+        if ($acao == 'Salvar') {
+            if ($id > 0) {
                 $resultado = $circulo->alterar();
-                break;
-            case ("Excluir"):
-                $resultado = $circulo->excluir();
-                break;
-        }
+            } else {
+                $resultado = $circulo->incluir();
+            }
+        } elseif ($acao == 'Excluir') {
+            $resultado = $circulo->excluir();
+   }
+           var_dump($id);
         $_SESSION['MSG'] = "Dados inseridos/Alterados com sucesso!";
         move_uploaded_file($arquivo['tmp_name'],$destino);
 

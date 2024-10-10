@@ -72,7 +72,7 @@
         <h1 class="text-3xl font-bold text-center mb-6">Formulário de Criação de Circulos</h1>
 
         <form action="circulo.php" method="post" enctype="multipart/form-data" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-            <input type="hidden" name="id" id="id" value="<?= $id ? $circulo->getId() : 0 ?>">
+            <input type="text" hidden name="id" id="id" value="<?= $id ? $circulo->getId() : 0 ?>">
 
             <!-- Raio -->
             <div class="mb-4">
@@ -83,7 +83,7 @@
             <!-- Cor -->
             <div class="flex flex-col">
                 <label class="form-label" for="cor">Cor</label>
-                <input type="color" class="color-input" name="cor" id="cor" value="<?= $id ? $quadrado->getCor() : 'black' ?>">
+                <input type="color" class="color-input" name="cor" id="cor" value="<?= $id ? $circulo->getCor() : 'black' ?>">
             </div>
 
             <!-- Unidade -->

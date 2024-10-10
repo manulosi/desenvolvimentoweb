@@ -131,7 +131,7 @@ return Database::executar($sql, $parametros); }
     
     public function calcularArea()
     {
-        $p = $this->getLado1() + $this->getLado2() + $this->getLado3();
+        $p = ($this->getLado1() + $this->getLado2() + $this->getLado3()) / 2;
         $a = sqrt($p * ($p - $this->getLado1()) * ($p - $this->getLado2()) * ($p - $this->getLado3()));
         $area = number_format($a, 2);
         return $area;
