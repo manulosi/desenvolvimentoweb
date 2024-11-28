@@ -1,0 +1,40 @@
+<title>Navbar</title>
+<style>
+    /* Estilo básico para a navbar */
+    .navbar {
+        display: flex;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+    .navbar a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    .navbar a:hover {
+        background-color: #ff8bd7;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="../../../../../2024/desenvolvimento/tab/autor/">Autor</a>
+    <a href="../../../../../2024/desenvolvimento/tab/autorlivro/">Autor Livro</a>
+    <a href="../../../../../2024/desenvolvimento/tab/livro/">Livro</a>
+    <a href="../../../../../2024/desenvolvimento/tab/usuario/">Usuario</a>
+</div>
+
+
+<form method="POST" action="index.php">
+    <input type="hidden" name="id" value="{id}">
+    
+    
+    <label for="descricao">Descrição:</label>
+    <textarea name="descricao">{descricao}</textarea>
+    
+    <input type="hidden" name="acao" value="salvar">
+    <button type="submit">Salvar</button>
+    <input type="submit" name="acao" value="excluir">
+</form>

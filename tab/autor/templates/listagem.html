@@ -1,0 +1,25 @@
+<form action="" method="get">
+    <fieldset>
+        <legend>Pesquisa</legend>
+        <label for="busca">Busca:</label>
+        <input type="text" name="busca" id="busca" value="">
+        <label for="tipo">Tipo:</label>
+        <select name="tipo" id="tipo">
+            <option value="">Escolha</option>
+            <option value="1">Id</option>
+            <option value="2">Nome</option>
+            <option value="3">Sobrenome</option>
+        </select>
+        <button type='submit'>Buscar</button>
+
+    </fieldset>
+</form>
+<h1>Lista de autores</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+    </tr>
+    {itens}
+</table>  

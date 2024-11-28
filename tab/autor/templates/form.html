@@ -1,0 +1,41 @@
+<title>Navbar</title>
+<style>
+    /* Estilo básico para a navbar */
+    .navbar {
+        display: flex;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+    .navbar a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    .navbar a:hover {
+        background-color: #ff8bd7;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="../../../../../2024/desenvolvimento/tab/autor/">Autor</a>
+    <a href="../../../../../2024/desenvolvimento/tab/autorlivro/">Autor Livro</a>
+    <a href="../../../../../2024/desenvolvimento/tab/livro/">Livro</a>
+    <a href="../../../../../2024/desenvolvimento/tab/usuario/">Usuario</a>
+</div>
+
+<form action="index.php" method="POST">
+    <input type="hidden" name="id" value="{id}"> <!-- ID do autor -->
+    
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" value="{nome}"><br><br>
+    
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" name="sobrenome" id="sobrenome" value="{sobrenome}"><br><br>
+    
+    <button type='submit' name='acao' value='salvar'>Salvar</button>
+    <button type='submit' name='acao' value='excluir'>Excluir</button>
+    <button type='reset'>Cancelar</button>
+</form>

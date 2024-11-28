@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livro</title>
+</head>
+<title>Navbar</title>
+<style>
+    /* Estilo básico para a navbar */
+    .navbar {
+        display: flex;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+    .navbar a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    .navbar a:hover {
+        background-color: #ff8bd7;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="../../../../../2024/desenvolvimento/tab/autor/">Autor</a>
+    <a href="../../../../../2024/desenvolvimento/tab/autorlivro/">Autor Livro</a>
+    <a href="../../../../../2024/desenvolvimento/tab/livro/">Livro</a>
+    <a href="../../../../../2024/desenvolvimento/tab/usuario/">Usuario</a>
+</div>
+
+<body>
+    <h1>Cadastro de Livro</h1>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="id" id="id" value="{id}">
+
+        <label for="titulo">Título:</label>
+        <input type="text" name="titulo" id="titulo" value="{titulo}" required><br><br>
+
+        <label for="pub">Data de Publicação:</label>
+        <input type="date" name="pub" id="pub" required><br><br>
+
+        <label for="capa">Capa:</label>
+        <input type="file" name="capa" id="capa" value="{capa}" accept="image/*" required><br><br>
+
+        <label for="categoria">Categoria:</label>
+        <select name="categoria" id="categoria" >
+            {categoria} <!-- Supondo que você preenche as opções de categorias aqui -->
+        </select><br><br>
+
+        <label for="preco">Preço:</label>
+        <input type="number" name="preco" id="preco" value="{preco}" required><br><br>
+
+        <button type='submit' name='acao' value='salvar'>Salvar</button>
+        <button type='submit' name='acao' value='excluir'>Excluir</button>
+        <button type='reset'>Cancelar</button>
+    </form>
+</body>
+</html>

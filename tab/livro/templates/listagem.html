@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Livros</title>
+</head>
+
+<body>
+    <!-- Formulário de pesquisa -->
+    <form action="" method="get">
+        <fieldset>
+            <legend>Pesquisa</legend>
+            <label for="busca">Busca:</label>
+            <input type="text" name="busca" id="busca" value="">
+            <label for="tipo">Tipo:</label>
+            <select name="tipo" id="tipo">
+                <option value="">Escolha</option>
+                <option value="1">Id</option>
+                <option value="2">Un</option>
+            </select>
+            <button type='submit'>Buscar</button>
+
+        </fieldset>
+    </form>
+    <hr>
+    <h1>Lista Livro</h1>
+    <form action="../compra/index.php" method="get">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Titulo</th>
+                <th>Ano de Publicação</th>
+                <th>Capa</th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th>Selecionar</th>
+            </tr>
+            {itens}
+        </table>
+        <input type="submit" name="acao" id="acao" value="comprar">
+    </form>
+</body>

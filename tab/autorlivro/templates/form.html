@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Unidade Medido</title>
+    <title>Navbar</title>
+<style>
+    /* Estilo básico para a navbar */
+    .navbar {
+        display: flex;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+    .navbar a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    .navbar a:hover {
+        background-color: #ff8bd7;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="../../../../../2024/desenvolvimento/tab/autor/">Autor</a>
+    <a href="../../../../../2024/desenvolvimento/tab/autorlivro/">Autor Livro</a>
+    <a href="../../../../../2024/desenvolvimento/tab/livro/">Livro</a>
+    <a href="../../../../../2024/desenvolvimento/tab/usuario/">Usuario</a>
+</div>
+
+</head>
+<body>
+    <h1>Cadastro de Autor</h1>
+    <form action="index.php" method="POST">
+
+        <select name="autor" id="autor">
+            {autor}
+        </select><br><br>
+        <select name="livro" id="livro">
+            {livro}
+        </select><br><br>
+
+        <button type='submit' name='acao' value='salvar'>Salvar</button>
+        <button type='submit' name='acao' value='excluir'>Excluir</button>
+        <button type='reset'>Cancelar</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nova compra</title>
+</head>
+<body>
+    
+    <form action="" method="post">
+
+            <label for="id">Id</label>
+            <input type="text" name="id" id="id" readonly value="{id}">
+            <label for="idLivro">Id Livro</label>
+            <input type="text" name="idLivro[]" id="idLivro[]" readonly value="{idLivro}">
+            <br><br>
+            <label for="tit">Título</label>
+            <input type="text" name="tit[]" id="tit[]" readonly value="{tit}">
+            <br><br>
+            <label for="publicacao">Data da publicação</label>
+            <input type="text" name="publicacao[]" id="publicacao[]" readonly value="{pub}">
+            <br><br>
+            <h2>Capa</h2>
+            <img src="{capa}" alt="capa do livro {tit}" width="50%">
+            <br><br>
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao[]" id="descricao[]" readonly value="{descricao}">
+            <br><br>
+            <label for="preco">Preço</label>
+            <input type="text" name="preco[]" id="preco[]" readonly value="{preco}">
+            <br><br>
+            <label for="quantia">Quantidade</label>
+            <input type="text" name="quantia[]" id="quantia[]" value="1">
+            <br><br>
+            
+
+
+    </form>
+
+</body>
+</html>
